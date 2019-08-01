@@ -1,0 +1,27 @@
+
+body {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    background-color: blue;
+    margin: 0px;
+}
+
+#setting-block {
+    background-color: red;
+}
+
+#timer {
+    background-color: purple;
+}
+
+#app {
+    width: 50%;
+    
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Pomodoro App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 class="row header center teal-text">Pomodoro</h1>
+    
+        
+        <div class="row">
+            
+            <div class="col s2 offset-s2">
+                <div class="row center">
+                    <h5 class="col s12">
+                        Work Time
+                    </h5>
+                    <div class="col s4">
+                        <button id="workTimeDec" class="btn btn-medium"><i class="material-icons">arrow_drop_down</i></button>
+                    </div>
+                    <div id="workTime" class="col s4" style="font-size:26px;">
+                        25
+                    </div>
+                    <div class="col s4">
+                        <button id="workTimeInc" class="btn btn-medium waves-effect waves-light"><i class="material-icons">arrow_drop_up</i></button>
+                    </div>
+                    <div class="col s12">
+                        minutes
+                    </div>
+                </div>
+            </div>
+            <div class="col s4 center">
+                <h2 id="time" class="col s12 light">00:25:00</h1>
+            </div>
+            <div class="col s2">
+                    <div class="row center">
+                        <h5 class="col s12">
+                            Break Time
+                        </h5>
+                        <div class="col s4">
+                            <button id="breakTimeDec" class="btn btn-medium"><i class="material-icons">arrow_drop_down</i></button>
+                        </div>
+                        <div id="breakTime" class="col s4" style="font-size:26px;">
+                            5
+                        </div>
+                        <div class="col s4">
+                            <button id="breakTimeInc" class="btn btn-medium"><i class="material-icons">arrow_drop_up</i></button>
+                        </div>
+                        <div class="col s12">
+                            minutes
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <h6 id="segType" class="row center" style="color:#962300;">
+            Work work
+        </h6>
+        <div class="row" style="margin-top:60px;">
+            <button id="startBtn" class="btn btn-medium waves-effect waves-light col s1 offset-s4"><i class="material-icons">play_arrow</i></button>
+            <button id="stopBtn" class="btn btn-medium col s1"><i class="material-icons">stop</i></button>
+            <button id="pauseBtn" class="btn btn-medium col s1"><i class="material-icons">pause</i></button>
+            <button id="resetBtn" class="btn btn-medium col s1"><i class="material-icons">refresh</i></button>
+        </div>
+        
+    </div>
+
+    
+
+</body> 
+
+
+
+    <script src="script.js"></script>
+</html>
