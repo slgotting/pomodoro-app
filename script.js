@@ -115,6 +115,7 @@ function pauseTimer() {
 function stopTimer() {
     on = false;
     paused = false;
+    onBreak = false;
     clearInterval(interval);
     interval = null;
     updateValueText(convertSecToTime(document.getElementById('workTime').innerText * 60), timerTime);
